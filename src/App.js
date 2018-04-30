@@ -13,7 +13,12 @@ const API_KEY = "b6907d289e10d714a6e88b30761fae22";
 class App extends Component {
 
   state = {
-
+    temperature: undefined,
+    city: undefined,
+    country: undefined,
+    humidity: undefined,
+    description: undefined,
+    error: undefined
   }
 
   getWeather = async (e) => {
@@ -25,6 +30,16 @@ class App extends Component {
     const data = await api_call.json();
     console.log(data);
     
+    this.setState( {
+      temperature:data.main.temp,
+      city: data.name,
+      country: data.sys.country,
+      humidity: data.humidity,
+      description: data.weather[0].description,
+      error: ""
+
+    }); //end setstate
+
   }// end of getWeat func
  
   render() {
@@ -34,7 +49,13 @@ class App extends Component {
        
        <Titles />
        <Form getWeather={this.getWeather}/>
-       <Weather />
+       <Weather temperature={this.state.temperature}
+                city={this.state.city}
+                country={this.state.country}
+                humidity={this.state.humidity}
+                description={this.state.description}
+                error={this.state.error}
+                            />
       </div>
     );
   }//end render
