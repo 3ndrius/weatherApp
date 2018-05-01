@@ -70,7 +70,7 @@ class App extends Component {
                 description={this.state.description}
                 error={this.state.error}
         />
-         <h1>{this.state.error} </h1>
+       
       </div>
     );
   }//end render

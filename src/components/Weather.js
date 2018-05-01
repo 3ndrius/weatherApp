@@ -11,7 +11,7 @@ class Weather extends React.Component {
                 {this.props.temperature && <p>Temp: {this.props.temperature} </p>}
                 {this.props.humidity && <p>Humidity: {this.props.himidity} </p>}
                 {this.props.description && <p> Condition: {this.props.description} </p> }
-                <p>{this.props.error} </p>
+                {this.props.error && <p>{this.props.error} </p>}
             </div>
         );
     }
