@@ -1,17 +1,13 @@
 import React from "react";
 
 
-class Titles extends React.Component{
+const Titles = () => (
 
-    render() {
-        return(
-            <div>
-            <h1> Weather Finder</h1>
-            <p> Find out temperature in thiss location </p>
-            </div>
-        );
-    }
-};
+        <div>
+        <h1> Weather Finder</h1>
+        <p> Find out temperature in your location </p>
+        </div>
+    );
 
 
 
