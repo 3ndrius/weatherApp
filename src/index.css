@@ -5,7 +5,7 @@ body {
   font-family: 'Roboto', sans-serif;
   color:rgba(226, 240, 241, 0.95);
   font-weight: 300;
-  letter-spacing:2px
+  letter-spacing:1px
 }
 .container{
  
@@ -25,6 +25,8 @@ height: 40px;
  border:none;
  border-bottom: 1px solid rgba(255, 255, 255, 0.95);
  margin-right: 10px;
+ color:white;
+ font-size: 17px;
 
 }
 button{
@@ -35,18 +37,26 @@ button{
   border: none;
   color: rgba(38, 160, 123, 0.95);
   background: rgba(255, 255, 255, 0.95);
+  outline: none;
+}
+input:focus{
+  outline: none;
+  outline-style:none;
+  box-shadow:none;
+
+
 }
 
 input::placeholder{
   color:rgba(255, 255, 255, 0.95);
   font-size: 17px;
-  padding: 4px;
-  transform:all 0.5s ease-in-out;
+  padding: 6px;
+  transform:top 5.5s ease-in-out;
 }
-input::placeholder:focus{
+input:focus::placeholder{
   letter-spacing:2px;
-  position:relative;
-  top:40px;
-
-  
+ position: relative;
+  top:12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.95);
+ 
 }
