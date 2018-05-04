@@ -3,8 +3,9 @@ body {
   padding: 0;
   background-color: rgb(38, 160, 123);
   font-family: 'Roboto', sans-serif;
-  color:rgba(226, 240, 241, 0.945);
-
+  color:rgba(226, 240, 241, 0.95);
+  font-weight: 300;
+  letter-spacing:2px
 }
 .container{
  
@@ -13,9 +14,39 @@ body {
   justify-content:center;
   align-items: center;
 }
-.root {
-  font-family: 'Roboto';
+p{
+  padding: 0 0 20px 0 ;
 }
-.root p{
+input{
+  
+height: 40px;
+ width: 200px;
+ background: rgba(255, 0, 0, 0);
+ border:none;
+ border-bottom: 1px solid rgba(255, 255, 255, 0.95);
+ margin-right: 10px;
+
+}
+button{
+  height: 40px;
+  padding: 0 20px;
+  margin-left:10px;
+  border-radius:20px;
+  border: none;
+  color: rgba(38, 160, 123, 0.95);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+input::placeholder{
+  color:rgba(255, 255, 255, 0.95);
+  font-size: 17px;
+  padding: 4px;
+  transform:all 0.5s ease-in-out;
+}
+input::placeholder:focus{
+  letter-spacing:2px;
+  position:relative;
+  top:40px;
+
   
 }
