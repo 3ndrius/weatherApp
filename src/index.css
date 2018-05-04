@@ -10,13 +10,14 @@ body {
 .container{
  
  padding: 100px;
-  display: flex;
-  justify-content:center;
-  align-items: center;
+  display: grid;
+  justify-items: center;
+  align-content: center;
 }
 p{
   padding: 0 0 20px 0 ;
 }
+
 input{
   
 height: 40px;
@@ -29,6 +30,7 @@ height: 40px;
  font-size: 17px;
 
 }
+
 button{
   height: 40px;
   padding: 0 20px;
@@ -51,10 +53,11 @@ input::placeholder{
   color:rgba(255, 255, 255, 0.95);
   font-size: 17px;
   padding: 6px;
-  transform:top 5.5s ease-in-out;
+  letter-spacing:1px;
+ 
 }
 input:focus::placeholder{
-  letter-spacing:2px;
+  
  position: relative;
   top:12px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.95);
