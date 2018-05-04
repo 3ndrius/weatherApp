@@ -1,9 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(14, 129, 145);
-  font-family: sans-serif;
-  color:white;
+  background-color: rgb(38, 160, 123);
+  font-family: 'Roboto', sans-serif;
+  color:rgba(226, 240, 241, 0.945);
 
 }
 .container{
@@ -12,4 +12,10 @@ body {
   display: flex;
   justify-content:center;
   align-items: center;
+}
+.root {
+  font-family: 'Roboto';
+}
+.root p{
+  
 }
