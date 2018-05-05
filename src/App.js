@@ -74,7 +74,13 @@ class App extends Component {
   render() {
 
     return (
-      <div className="App">
+     <div className="container">
+      <div className="row"> 
+      <div className="col-xs-5">
+      
+       </div>
+        <div className="col-xs-7"> 
+        <div className="App">
        
        <Titles />
        <Form getWeather={this.getWeather}/>
@@ -91,6 +97,9 @@ class App extends Component {
                 error={this.state.error}
         />
      
+      </div>
+        </div>
+      </div>
       </div>
     );
   }//end render

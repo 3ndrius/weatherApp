@@ -7,13 +7,7 @@ body {
   font-weight: 300;
   letter-spacing:1px
 }
-.container{
- 
- padding: 100px;
-  display: grid;
-  justify-items: center;
-  align-content: center;
-}
+
 p{
   padding: 0 0 20px 0 ;
 }
