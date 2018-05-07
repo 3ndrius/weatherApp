@@ -18,6 +18,11 @@ p{
   padding: 10%;
  
 }
+.figure{
+  background: url("back.png") center center no-repeat;
+  height: 100vh;
+  
+}
 input{
   
 height: 40px;

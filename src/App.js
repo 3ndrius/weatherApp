@@ -74,9 +74,9 @@ class App extends Component {
   render() {
 
     return (
-     <div className="container">
+     <div className="container-fluid">
       <div className="row"> 
-      <div className="col-xs-5 col-md-5">
+      <div className="col-xs-5 col-md-5 figure">
       
        </div>
         <div className="col-xs-7 col-md-7"> 
