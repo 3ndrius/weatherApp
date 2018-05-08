@@ -74,15 +74,15 @@ class App extends Component {
   render() {
 
     return (
-     <div className="container-fluid">
-      <div className="row"> 
-      <div className="col-xs-5 col-md-5 figure">
-      
-       </div>
-        <div className="col-xs-7 col-md-7"> 
+     <div className="container">
+
+        <div className="figure">
+        <Titles />
+        </div>
+        
         <div className="App">
        
-       <Titles />
+      
        <Form getWeather={this.getWeather}/>
        <Weather temperature={this.state.temperature}
                 minTemp={this.state.minTemp}
@@ -99,8 +99,7 @@ class App extends Component {
      
       </div>
         </div>
-      </div>
-      </div>
+     
     );
   }//end render
 }; // end class
