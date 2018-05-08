@@ -36,7 +36,7 @@ class App extends Component {
 
       const api_call = await fetch(`http://openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}`);
       const data = await api_call.json();
-      console.log(data);
+      // console.log(data);
       this.setState( {
         temperature:data.main.temp,
         minTemp: data.main.temp_max,

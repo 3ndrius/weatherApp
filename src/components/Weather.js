@@ -11,7 +11,7 @@ const Weather = props => (
         {props.pressure && <p>Pressure: {props.pressure} hPa </p>}
         {props.description && <p> Condition: {props.description} </p> }
         {props.wind && <p> Wind: {props.wind} km/h</p> }
-        {props.icon && <span> <p> Icon: </p> <img src={`http://openweathermap.org/img/w/${props.icon}.png`} alt="weather icon" /> </span>  }
+        {props.icon && <span className="icon"><img src={`http://openweathermap.org/img/w/${props.icon}.png`} alt="weather icon" /> </span>  }
         
         {props.error && <p>{props.error} </p>}
 
