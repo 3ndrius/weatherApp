@@ -1,15 +1,10 @@
 import React, { Component } from 'react';
-
 import './App.css';
-
 // own imports
 import Titles from './components/Titles';
 import Weather from './components/Weather';
 import Form from './components/Form';
-
-
 const API_KEY = "b6907d289e10d714a6e88b30761fae22";
-
 class App extends Component {
 
   state = {
@@ -25,7 +20,6 @@ class App extends Component {
     wind: undefined,
     error: undefined
   }
-
   getWeather = async (e) => {
     e.preventDefault();
   
@@ -81,8 +75,6 @@ class App extends Component {
         </div>
         
         <div className="App">
-       
-      
        <Form getWeather={this.getWeather}/>
        <Weather temperature={this.state.temperature}
                 minTemp={this.state.minTemp}
@@ -96,12 +88,10 @@ class App extends Component {
                 wind={this.state.wind}
                 error={this.state.error}
         />
-     
       </div>
         </div>
      
     );
   }//end render
 }; // end class
-
 export default App;
