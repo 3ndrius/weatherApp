@@ -27,7 +27,6 @@ class App extends Component {
     const country = e.target.elements.country.value;
 
     if(city && country) {
-
       const api_call = await fetch(`http://openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}`);
       const data = await api_call.json();
       // console.log(data);
@@ -43,7 +42,6 @@ class App extends Component {
         icon: data.weather[0].icon,
         wind: data.wind.speed,
         error: ""
-  
       }); //end setstate
     }//end if
     else{
@@ -64,16 +62,13 @@ class App extends Component {
     }//end else   
 
   }// end of getWeat func
- 
   render() {
-
     return (
      <div className="container">
 
         <div className="figure">
         <Titles />
-        </div>
-        
+        </div>  
         <div className="App">
        <Form getWeather={this.getWeather}/>
        <Weather temperature={this.state.temperature}
@@ -90,7 +85,6 @@ class App extends Component {
         />
       </div>
         </div>
-     
     );
   }//end render
 }; // end class
