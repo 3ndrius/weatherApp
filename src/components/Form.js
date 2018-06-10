@@ -1,8 +1,5 @@
 import React from 'react';
-
-
 const Form = props => (
-
     <div> 
         <form onSubmit= {props.getWeather}>
             <input type="text" name="city" placeholder = "city"/>
@@ -11,5 +8,4 @@ const Form = props => (
         </form>
     </div>
 );
-
 export default Form;
