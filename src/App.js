@@ -6,7 +6,6 @@ import Weather from './components/Weather';
 import Form from './components/Form';
 const API_KEY = "b6907d289e10d714a6e88b30761fae22";
 class App extends Component {
-
   state = {
     temperature:undefined,
     minTemp: undefined,
@@ -88,4 +87,5 @@ class App extends Component {
     );
   }//end render
 }; // end class
+
 export default App;
