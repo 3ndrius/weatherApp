@@ -11,7 +11,5 @@ const Weather = props => (
         {props.icon && <span className="icon"><img src={`http://openweathermap.org/img/w/${props.icon}.png`} alt="weather icon" /> </span>  } 
         {props.error && <p>{props.error} </p>}
     </div>
-
 );
-
 export default Weather;
