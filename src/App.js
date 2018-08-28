@@ -21,7 +21,6 @@ class App extends Component {
   }
   getWeather = async (e) => {
     e.preventDefault();
-  
     const city = e.target.elements.city.value;
     const country = e.target.elements.country.value;
 
@@ -59,7 +58,6 @@ class App extends Component {
   
       }); //end setstate
     }//end else   
-
   }// end of getWeat func
   render() {
     return (
