@@ -55,7 +55,6 @@ class App extends Component {
         icon: undefined,
         wind: undefined,
         error: "Please type your location properly!"
-  
       }); //end setstate
     }//end else   
   }// end of getWeat func
@@ -85,5 +84,4 @@ class App extends Component {
     );
   }//end render
 }; // end class
-
 export default App;
